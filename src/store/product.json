@@ -1,0 +1,393 @@
+{
+    "gucci": [
+      {
+        "id": 1,
+        "name": "Gucci x Disney Limited Edition Beige GG Supreme Donald Duck",
+        "image": "gucci-4.jpg",
+        "link": "/",
+        
+        "price": "20.000.000"
+      },
+      {
+        "id": 2,
+        "name": "Gucci Black Matelasses Leather GG Marmont Zip Around Wallet",
+        "image": "gucci-2.jpg",
+        "link": "#",
+        
+        "price": "20.000.000"
+      },
+      {
+        "id": 3,
+        "name": "Gucci Dark Brown Guccissima Leather Joy Boston Bag",
+        "image": "gucci-3.jpg",
+        "link": "#",
+     
+        "price": "35.000.000"
+      },
+      {
+        "id": 4,
+        "name": "Customised Gucci Beige Suede Large Jackie O Shoulder Bag",
+        "image": "burberry-14.jpg",
+        "link": "#",
+        
+        "price": "35.000.000"
+      },
+      {
+        "id": 5,
+        "name": "Gucci Red Suede Medium Dionysus Shoulder Bag",
+        "image": "gucci-6.jpg",
+        "link": "#",
+        
+        "price": "67.000.000"
+      },
+      {
+        "id": 6,
+        "name": "Gucci Brown Beige GG Canvas Medium Vintage Web Boston Bag",
+        "image": "burberry-13.jpg",
+        "link": "#",
+        
+        "price": "60.000.000"
+      }
+    ],
+    "burberry": [
+      {
+        "id": 1,
+        "name": "Burberry Check Zip Around Long Pouch",
+        "image": "burberry-2.jpg",
+        "link": "/",
+        
+        "price": "20.000.000"
+      },
+      {
+        "id": 2,
+        "name": "Burberry Women Mini Vintage Check Two-handle Title Bag",
+        "image": "burberry-3.jpg",
+        "link": "#",
+     
+        "price": "15.000.000"
+      },
+      {
+        "id": 3,
+        "name": "Burberry Small Check Applique Leather TB Bag",
+        "image": "burberry-4.jpg",
+        "link": "#",
+        "price": "35.000.000"
+      },
+      {
+        "id": 4,
+        "name": "Burberry Vintage Check E-canvas Continental Wallet",
+        "image": "burberry-5.jpg",
+        "link": "#",
+        "price": "25.000.000"
+      },
+      {
+        "id": 5,
+        "name": "Burberry Neverfull High-end Bag and Leather Medium",
+        "image": "burberry-6.jpg",
+        "link": "#",
+        "price": "50.000.000"
+      },
+      {
+        "id": 6,
+        "name": "Burberry Mini Bag Logo Draphic Canvas And Leather Pocket",
+        "image": "burberry-7.jpg",
+        "link": "#",
+        "price": "40.000.000"
+      }
+    ],
+    "menBuberry": [
+      {
+        "brand": "Burberry",
+        "id": 1,
+        "name": "Burberry Check Zip Aruond Long Pouch",
+        "image": "burberry-2.jpg",
+        "link": "#",
+        "price": "20.000.000"
+      },
+      {
+        "id": 2,
+        "name": "Burberry Men's Wallet With Gray Pattern VNB11",
+        "image": "men-1.jpg",
+        "link": "#",
+        "price": "5.000.000"
+      },
+      {
+        "id": 3,
+        "name": "Burberry Vintage Check E-canvas Continental Wallet",
+        "image": "burberry-5.jpg",
+        "link": "#",
+        "price": "30.000.000"
+      },
+      {
+        "id": 4,
+        "name": "Burberry London Check and Leather Continental Wallet",
+        "image": "men-2.jpg",
+        "link": "#",
+        "price": "25.000.000"
+      }
+    ],
+    "menGucci": [
+      {
+        "brand": "Gucci",
+        "id": 1,
+        "name": "Gucci x Disney Beige GG Supreme Donald Duck",
+        "image": "gucci-4.jpg",
+        "link": "#",
+        "price": "20.000.000 "
+      },
+      {
+        "id": 2,
+        "name": "Gucci Men's Wallet With Textured Leather Letter G",
+        "image": "men-7.jpg",
+        "link": "#",
+        "price": "9.000.000"
+      },
+      {
+        "id": 3,
+        "name": "Gucci Men's Wallet Folded With Red Lined Logo Motifs",
+        "image": "men-8.jpg",
+        "link": "#",
+        "price": "24.000.000"
+      },
+      {
+        "id": 4,
+        "name": "Gucci Men's Bag With Black Double Logo Pattern",
+        "image": "men-9.jpg",
+        "link": "#",
+        "price": "12.000.000"
+      }
+    ],
+    "womanBurberry": [
+      {
+        "brand": "Burberry",
+        "id": 1,
+        "name": "Burberry Women Mini Vintage Check Two-handle Title Bag",
+        "image": "burberry-3.jpg",
+        "link": "#",
+        "price": "15.000.000"
+      },
+      {
+        "id": 2,
+        "name": "Burberry Mini Bag Logo Draphic Canvas And Leather Pocket",
+        "image": "burberry-7.jpg",
+        "link": "#",
+        "price": "40.000.000"
+      },
+      {
+        "id": 3,
+        "name": "Burberry Beige Haymarket Check Coated Canvas and Leather",
+        "image": "nu-1.jpg",
+        "link": "#",
+        "price": "50.000.000 "
+      },
+      {
+        "id": 4,
+        "name": "Burberry Pink Beige Haymarket Shoulder Bag",
+        "image": "nu-2.jpg",
+        "link": "#",
+        "price": "32.000.000"
+      }
+    ],
+    "womanGucci": [
+      {
+        "brand": "Gucci",
+        "id": 1,
+        "name": "Customised Gucci Beige Suede Large Jackie O Shoulder Bang",
+        "image": "burberry-14.jpg",
+        "link": "#",
+        "price": "35.000.000"
+      },
+      {
+        "id": 2,
+        "name": "Gucci Brown Beige GG Canvas Medium Vintage Web Boston Bag",
+        "image": "burberry-13.jpg",
+        "link": "#",
+        "price": "60.000.000"
+      },
+      {
+        "id": 3,
+        "name": "Burberry Premium Chest and Belly Bags 2022",
+        "image": "burberry-11.jpg",
+        "link": "#",
+        "price": "15.000.000 "
+      },
+      {
+        "id": 4,
+        "name": "Burberry Pink Beige Haymarket Shoulder Bag",
+        "image": "nu-3.jpg",
+        "link": "#",
+        "price": "10.000.000"
+      }
+    ],
+    "newArrival":[
+      {
+        "brand": "new Arrival",
+        "id": 1,
+        "name": "Burberry Check Zip Aruond Long Pouch",
+        "image": "burberry-2.jpg",
+        "link": "#",
+        "price": "20.000.000",
+        "color": "Xám Sọc Đen",
+        "material": "Da Bò Cao Cấp",
+        "number": "400"
+      },
+      {
+      
+        "id": 2,
+        "name": "Gucci x Disney Limited Edition Beige GG Supreme Donald Duck",
+        "image": "gucci-4.jpg",
+        "link": "#",
+        "price": "45.000.000",
+        "color": "Xám Sọc Đen",
+        "material": "Da Bò Cao Cấp",
+        "number": "400"
+      },
+      {
+  
+        "id": 3,
+        "name": "Burberry Women Mini Vintage Check Two-handle Title Bag",
+        "image": "burberry-3.jpg",
+        "link": "#",
+        "price": "15.000.000",
+        "color": "Xám Sọc Đen",
+        "material": "Da Bò Cao Cấp",
+        "number": "400"
+      },
+      {
+    
+        "id": 4,
+        "name": "Dior Beige and Black Dior Oblique Jacquard Wallet In Gray",
+        "image": "sp-dior-1.jpg",
+        "link": "#",
+        "price": "16.000.000",
+        "color": "Xám Sọc Đen",
+        "material": "Da Bò Cao Cấp",
+        "number": "400"
+      }
+  
+    ],
+    "HomeBurberry":[
+      {
+        "brand": "BURBERRY",
+        "id": 1,
+        "name": "Burberry Check Zip Aruond Long Pouch",
+        "image": "burberry-2.jpg",
+        "link": "#",
+        "price": "20.000.000",
+        "number": "200"
+      },
+      {
+      
+        "id": 2,
+        "name": " Burberry Women Mini Vintage Check Two-handle Title Bag",
+        "image": "burberry-3.jpg",
+        "link": "#",
+        "price": "15.000.000",
+        "number": "100"
+      },
+      {
+  
+        "id": 3,
+        "name": "Burberry Mini Bag Logo Draphic Canvas And Leather Pocket",
+        "image": "burberry-7.jpg",
+        "link": "#",
+        "price": "40.000.000",
+        "number": "300"
+      },
+      {
+    
+        "id": 4,
+        "name": "Burberry Small Check Applique Leather TB Bag",
+        "image": "burberry-4.jpg",
+        "link": "#",
+        "price": "35.000.000",
+        "number": "400"
+      }
+  
+    ],
+    "HomeGucci":[
+      {
+        "brand": "Gucci",
+        "id": 1,
+        "name": "Gucci x Disney Limited Edition Beige GG Supreme Donald Duck",
+        "image": "gucci-4.jpg",
+        "link": "#",
+        "price": "45.000.000"
+      },
+      {
+      
+        "id": 2,
+        "name": " Hermes Black Togo Leather Rose Gold Hardware Birkin 25 Bag",
+        "image": "gucci-8.jpg",
+        "link": "#",
+        "price": "23.000.000"
+      },
+      {
+  
+        "id": 3,
+        "name": "Gucci Red Suede Medium Dionysus Shoulder Bag",
+        "image": "gucci-6.jpg",
+        "link": "#",
+        "price": "67.000.000"
+      },
+      {
+    
+        "id": 4,
+        "name": "Burberry Vintage Check E-canvas Continental Wallet",
+        "image": "gucci-3.jpg",
+        "link": "#",
+        "price": "35.000.000"
+      }
+  
+    ],
+    "member": [
+      {
+        "id": 1,
+        "name": "NGUYEN NGOC QUY",
+        "job": "PROJECT TEAM LEADER",
+        "conten": "Founded in 2003 by Nguyen Ngoc Quy, this brand is the oldest genuine leather goods company in France. LV (abbreviation) specializes in designing luxury style leather goods, clothes and shoes, Regarding the wallet models, the Louis Vuitton brand is one of the most luxurious luxury brands in the world, not inferior to the  Gucci, Prada, etc. Louis Vuitton's customers are the elite and famous people. and power, they buy these products to show off their status and stylish style.,"
+        
+      },
+      {
+        "id": 2,
+        "name": "NGUYEN BA MANH",
+        "job": "CONTENT CREATION",
+        "conten": "Founded in 1996 by NGUYEN BA MANH, this brand is the oldest genuine leather goods company in France. LV (abbreviation) specializes in designing luxury style leather goods, clothes and shoes Regarding the wallet models, the Louis Vuitton brand is one of the most luxurious luxury brands in the world, not inferior to the  Gucci, Prada, etc. Louis Vuitton's customers are the elite and famous people. and power, they buy these products to show off their status and stylish style. LV-branded wallets are made from genuine leather, meticulous in every stitch and produced in small quantities, so whoever owns the LV men's wallet is getting the item valuable and admirable",
+        "conten-2": "",
+        "conten-3": ""
+      },
+      {
+        "id": 3,
+        "name": "NGUYEN HOANG HA",
+        "job": "CONTENT CREATION",
+        "conten1": "Founded in 2004 by NGUYEN HOANG HA, this brand is the oldest genuine leather goods company in France. LV (abbreviation) specializes in designing luxury style leather goods, clothes and shoes",
+        "conten2": "Regarding the wallet models, the Louis Vuitton brand is one of the most luxurious luxury brands in the world, not inferior to the  Gucci, Prada, etc. Louis Vuitton's customers are the elite and famous people. and power, they buy these products to show off their status and stylish style.",
+        "conten3": "LV-branded wallets are made from genuine leather, meticulous in every stitch and produced in small quantities, so whoever owns the LV men's wallet is getting the item valuable and admirable"
+      },
+      {
+        "id": 4,
+        "name": "NGUYEN VAN HUNG",
+        "job": "CONTENT CREATION",
+        "conten-1": "Founded in 2003 by NGUYEN VAN HUNG, this brand is the oldest genuine leather goods company in France. LV (abbreviation) specializes in designing luxury style leather goods, clothes and shoes",
+        "conten-2": "Regarding the wallet models, the Louis Vuitton brand is one of the most luxurious luxury brands in the world, not inferior to the  Gucci, Prada, etc. Louis Vuitton's customers are the elite and famous people. and power, they buy these products to show off their status and stylish style.",
+        "conten-3": "LV-branded wallets are made from genuine leather, meticulous in every stitch and produced in small quantities, so whoever owns the LV men's wallet is getting the item valuable and admirable"
+      },
+      {
+        "id": 5,
+        "name": "NGUYEN VAN PHUC",
+        "job": "CONTENT CREATION",
+        "conten-1": "Founded in 2004 by NGUYEN VAN PHUC, this brand is the oldest genuine leather goods company in France. LV (abbreviation) specializes in designing luxury style leather goods, clothes and shoes",
+        "conten-2": "Regarding the wallet models, the Louis Vuitton brand is one of the most luxurious luxury brands in the world, not inferior to the  Gucci, Prada, etc. Louis Vuitton's customers are the elite and famous people. and power, they buy these products to show off their status and stylish style.",
+        "conten-3": "LV-branded wallets are made from genuine leather, meticulous in every stitch and produced in small quantities, so whoever owns the LV men's wallet is getting the item valuable and admirable"
+      },
+      {
+        "id": 6,
+        "name": "LE THANH DUC",
+        "job": "CONTENT CREATION",
+        "conten-1": "Founded in 2003 by LE THANH DUC, this brand is the oldest genuine leather goods company in France. LV (abbreviation) specializes in designing luxury style leather goods, clothes and shoes",
+        "conten-2": "Regarding the wallet models, the Louis Vuitton brand is one of the most luxurious luxury brands in the world, not inferior to the  Gucci, Prada, etc. Louis Vuitton's customers are the elite and famous people. and power, they buy these products to show off their status and stylish style.",
+        "conten-3": "LV-branded wallets are made from genuine leather, meticulous in every stitch and produced in small quantities, so whoever owns the LV men's wallet is getting the item valuable and admirable"
+      }
+    ]
+  }
+  
