@@ -6,13 +6,19 @@ const routes: Array<RouteRecordRaw> = [
     name: 'home',
     component: MainLayoutVue,
     children: [
-  
+      {
+        path: '/login',
+        component: () => import('@/views/Login.vue')
+      },
+      {
+        path: '/sigUp',
+        component: ()=> import('@/views/SigUp.vue')
+      }
+
+
     ]
   },
-  {
-    path: '/login',
-    component: ()=>import('@/layouts/LoginLayout.vue')
-  }
+
 
 ]
 
