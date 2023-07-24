@@ -1,23 +1,21 @@
 <template>
   <div class="container">
 
-
-    <!-- form login -->
     <div class="form-container sign-in-container">
       <form action="#">
         <h1>Sign in</h1>
         <div class="social-container">
-          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social"><i class="fa fa-google-plus" style="color: red;" aria-hidden="true"></i></a>
+          <a href="#" class="social"><i class="fa fa-facebook" style="color: #4267B2;" aria-hidden="true"></i></a>
+          <a href="#" class="social"> <i class='fa fa-linkedin' style="color: #E1306C;"></i></a>
         </div>
         <span>or use your account</span>
-        <input v-model="email" type="email" placeholder="Email" />
+        <input  type="email" placeholder="Email" v-model="email" />
         <div class="color-p">
           {{ emailMesseger }}
         </div>
 
-        <input v-model="password" type="password" placeholder="Password" />
+        <input  type="password" placeholder="Password"  v-model="password"/>
         <div class="color-p">
           {{ passMesseger }}
         </div>
@@ -34,7 +32,6 @@
       </form>
 
     </div>
-
   </div>
 </template>
 
@@ -42,21 +39,28 @@
 import { ref } from 'vue';
 const passMesseger = ref('');
 const emailMesseger = ref('');
-import { email, checkEmail, checkPass, password } from "@/service/CheckLogin.ts";
+import { email, password, CheckEmail, CheckPass} from '@/service/Auth.ts'
+
 
 
 const Login = () => {
-  if (checkEmail() && checkPass()) {
-
+  if (CheckEmail() && CheckPass()) {
+      console.log("true");
+  }else{
+    console.log("false");
   }
 
-  if (!checkEmail()) {
+
+
+
+
+  if (!CheckEmail()) {
     emailMesseger.value = "Địa chỉ email không hợp lệ"
   } else {
     emailMesseger.value = '';
   }
 
-  if (!checkPass()) {
+  if (!CheckPass()) {
     passMesseger.value = "Mật khẩu phải chứa ít nhất 8 ký tự"
   } else {
     passMesseger.value = '';

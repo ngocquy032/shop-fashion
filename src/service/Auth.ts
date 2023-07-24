@@ -1,22 +1,19 @@
-import { RefSymbol } from "@vue/reactivity";
 import { ref } from "vue";
 
 const email = ref('');
-
 const password = ref('');
-const checkEmail = () => {
+const CheckEmail = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (email.value.trim() === '') {
+    if ((email.value.trim() === '') || (!emailRegex.test(email.value))) {
         return false;
-    } else if (!emailRegex.test(email.value)) {
-        return false;
+
     } else {
-       return true;
+        return true;
 
     }
 }
 
-const checkPass = () => {
+const CheckPass = () => {
     if ((password.value.trim() === '') || (password.value.length <= 7)) {
         return false;
     } else {
@@ -25,5 +22,5 @@ const checkPass = () => {
 }
 
 export {
-    email, checkEmail, password, checkPass
+    email, CheckEmail, password, CheckPass
 }

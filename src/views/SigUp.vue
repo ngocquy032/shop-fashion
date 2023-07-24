@@ -7,9 +7,9 @@
             <form action="#">
                 <h1>Sign Up</h1>
                 <div class="social-container">
-                    <a href="#" class="social"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social"><i class="fa fa-google-plus" style="color: red;" aria-hidden="true"></i></a>
+                    <a href="#" class="social"><i class="fa fa-facebook" style="color: #4267B2;" aria-hidden="true"></i></a>
+                    <a href="#" class="social"> <i class='fa fa-linkedin' style="color: #E1306C;"></i></a>
                 </div>
                 <span>or use your account</span>
                 <input type="text" placeholder="Name" v-model="name" />
@@ -41,52 +41,78 @@
   
 <script setup >
 import { ref } from 'vue';
-import { name, password, repassword, CheckName, CheckRepass, CheckPass } from '@/service/CheckSignUp.ts'
-import { email, checkEmail } from '@/service/CheckLogin.ts'
+import { email, password, CheckEmail, CheckPass } from '@/service/Auth.ts'
+
 const nameMesseger = ref('');
 const emailMesseger = ref('');
 const passMesseger = ref('');
 const repassMesseger = ref('');
+const name = ref('');
+const repassword = ref('');
 
 const Sigup = () => {
-    if(CheckName() && checkEmail() && CheckPass() && CheckRepass()){
-        console.log("true");
-    }
+   
+    const isEmailValidResult = isEmailValid();
+    const isPassValidResult = isPassValid();
+    const isNameResult = CheckName();
+    const isRepassResult = CheckRepass();
 
-
-
-
-
-    //name
-    if (!CheckName()) {
-        nameMesseger.value = "vui long nhap vao truong nay";
-    } else {
-        nameMesseger.value = '';
-    }
-    // pass
-    if (!CheckPass()) {
-        passMesseger.value = 'vui long nhap it nhat 8 ky tu'
-    } else {
-        passMesseger.value = '';
-    }
-    //repass
-    if (!CheckRepass()) {
-        repassMesseger.value = "mat khau khong khop";
-    } else {
-        repassMesseger.value = "";
-    }
-    //email
-
-    if (!checkEmail()) {
-        emailMesseger.value = "Địa chỉ email không hợp lệ"
-    } else {
-        emailMesseger.value = '';
+    if(isEmailValidResult && isPassValidResult && isNameResult && isRepassResult ){
+        console.log('true');
+    }else{
+        console.log('false');
     }
 
 }
 
 
+const isEmailValid = () => {
 
+    if (!CheckEmail()) {
+        emailMesseger.value = "vui long nhap dung dinh dang email";
+        return false;
+    } else {
+        emailMesseger.value = '';
+        return true;
+    }
+}
+
+const isPassValid = () => {
+
+    if (!CheckPass()) {
+        passMesseger.value = 'vui long nhap it nhat 8 ky tu';
+        return false;
+    } else {
+        passMesseger.value = '';
+        return true;
+    }
+}
+
+const CheckName = () => {
+    if (name.value.trim() === '') {
+        nameMesseger.value = "vui long nhap vao truong nay";
+        return false;
+    } else {
+        nameMesseger.value = '';
+        return true;
+
+    }
+}
+
+
+const CheckRepass = () => {
+    if ((repassword.value.trim() === "") || (repassword.value.length <= 7)) {
+        repassMesseger.value = "Vui long nhap it nhat 8 ky tu";
+        return false;
+    } else if (password.value !== repassword.value) {
+        repassMesseger.value = "Mat khau khong khop";
+        return false;
+    } else {
+        repassMesseger.value = '';
+        return true;
+    }
+
+}
 
 
 
