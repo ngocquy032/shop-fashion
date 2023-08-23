@@ -1,26 +1,34 @@
 <template>
     <div>
-      <div v-for="(brandProducts, type) in products" :key="type">
-        <div v-if="type === 0 || brandProducts.category !== products[type - 1].category">
-          <div id="box_title">
-            <label>{{ brandProducts.category }}</label>
-          </div>
-          <!-- Truyền danh sách sản phẩm cho component Cart -->
-          <Cart :products="brandProducts.products" />
+        <div v-for="(brandProducts, type) in products" :key="type">
+            <div v-if="type === 0 || brandProducts.category !== products[type - 1].category">
+                <div id="box_title">
+                    <label>{{ brandProducts.category }}</label>
+                    <div class="row">
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                        <!-- <Cart :products="brandProducts.products" /> -->
+                    </div>
+                </div>
+
+
+            </div>
         </div>
-      </div>
     </div>
-  </template>
+</template>
   
-  <script setup>
-  import { defineProps } from 'vue';
-  
-  import Cart from '@/components/product/Cart.vue';
-  const props = defineProps(['products']);
-  </script>
+<script setup>
+import { defineProps } from 'vue';
+
+import Cart from '@/components/product/Cart.vue';
+const props = defineProps(['products']);
+</script>
   
 
 <style  scoped>
+
 .no-underline {
     text-decoration: none;
 }

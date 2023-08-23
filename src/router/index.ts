@@ -3,7 +3,6 @@ import MainLayoutVue from '@/layouts/MainLayout.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'home',
     component: MainLayoutVue,
     children: [
       {

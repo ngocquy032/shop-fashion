@@ -1,0 +1,297 @@
+/* @media (max-width: 575.98px) {
+    .with-8 {
+        width: 0%;
+
+    }
+
+    #header {
+        padding: 0px 20px;
+        height: 80px;
+    }
+
+    #header img {
+        width: 0%;
+
+    }
+
+    .carousel-item img {
+        height: 350px;
+    }
+
+    .size-img img {
+
+        width: 145px;
+    }
+
+    .card-body p {
+        margin: 0 15px;
+    }
+
+    .card {
+        padding-bottom: 0px;
+    }
+
+    .size-img img {
+        margin: 0px 100px;
+    }
+
+    #card {
+        text-align: center;
+        margin: 0 5%;
+    }
+
+    #wrapper {
+        height: auto;
+    }
+
+} */
+
+@media screen and (max-width: 575.98px) {
+    .with-8 {
+        width: 0%;
+
+    }
+
+    #header {
+        height: 70px;
+    }
+
+    .cart-item {
+        text-align: center;
+        margin: 20px 10px;
+    }
+
+    .size-img img {
+        width: 50%;
+        object-fit: contain;
+        height: 270px;
+        margin-top: 10px;
+    }
+
+}
+
+@media (min-width: 576px) {
+    #header {
+        height: 90px;
+    }
+
+    /* s */
+    .with-8 {
+        width: 0%;
+
+    }
+
+    #search_btn {
+        padding: 5px 0px;
+
+    }
+
+    .user {
+        padding: 0;
+    }
+
+    .carousel-item img {
+        height: 350px;
+    }
+
+    .size-img img {
+        object-fit: contain;
+        width: 200px;
+    }
+
+    .card-body p {
+        margin: 0 15px;
+    }
+
+    .card {
+        padding-bottom: 0px;
+    }
+
+    .item a {
+
+        padding: 19px 5px;
+    }
+
+    #search_btn {
+        padding: 5px 10px;
+    }
+
+    #menu .item_menu {
+        padding: 0;
+    }
+
+    .product-container {
+        text-align: center;
+        margin: 0 5%;
+    }
+
+    #card {
+        margin: 0 20px;
+        text-align: center;
+    }
+
+    .carousel-inner img {
+        margin-top: 80px;
+    }
+
+    .cart-item {
+        margin-bottom: 20px;
+    }
+
+
+
+}
+
+@media (min-width:768px) {
+    .with-8 {
+        width: 8%;
+
+    }
+
+    #header {
+        height: 80px;
+    }
+
+
+    .size-img img {
+
+        margin: 5px 30%;
+        width: 250px;
+        object-fit: contain;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+
+    #menu .item a {
+        margin: 0;
+        text-decoration: none;
+        padding: 14px 10px;
+        display: block;
+        color: #fff;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    .carousel-item img {
+        margin-top: 80px;
+        height: 600px;
+    }
+
+    .size-img img {
+        margin: 5px 10px;
+        object-fit: contain;
+    }
+
+    .item-product-vc {
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cart-item {
+        display: flex;
+        margin: 5rem;
+        object-fit: contain;
+        flex-wrap: wrap;
+    }
+
+    #card {
+        width: 300px;
+        margin-right: 0;
+    }
+
+    .cart img {
+        padding: 0 20px;
+    }
+
+    #search_btn {
+        padding: 5px;
+    }
+    #box_title {
+        width: 170%;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+    .cart img {
+        padding: 0 25px;
+    }
+
+
+    #search_btn {
+        padding: 5px 10px;
+    }
+
+    #box_title {
+        width: 250%;
+    }
+
+    .cart-item {
+        display: flex;
+        margin: 3rem;
+        object-fit: contain;
+        flex-wrap: wrap;
+
+    }
+
+    #card {
+        margin-top: inherit;
+    }
+
+
+}
+
+@media (min-width: 1400px) {
+
+    #header {
+        height: 100px;
+    }
+
+    /* .cart-item {
+        margin: 0;
+        
+    } */
+    .cart img {
+        padding: 0 10px;
+    }
+
+    #box_title {
+        width: 400%;
+    }
+
+    .item-product-vc {
+        display: flex;
+        /* margin: 0 25px; */
+        margin-right: 5%;
+    }
+
+
+    .cart img{
+        padding: 0 20px;
+    }
+    .cart-item {
+        width: 250px;
+        margin: 3rem;
+        /* flex-basis: 25%; */
+
+    }
+
+    #menu .item_menu .item_brands {
+        width: max-content;
+    }
+    #menu .item a{
+        padding: 14px 25px;
+    }
+
+
+}

@@ -1,7 +1,7 @@
 <template>
     <div id="wrapper">
         <div id="header">
-                <img class="with-8" src="../../public/assets/logo.png" alt="" >
+            <img class="with-8" src="../../public/assets/logo.png" alt="">
             <div id="menu">
                 <div class="item">
                     <div class="item_bottom">
@@ -23,10 +23,10 @@
                     </div>
                 </div>
                 <div class="item">
-                   <router-link to="/men">MEN</router-link>
+                    <router-link to="/men">MEN</router-link>
                 </div>
                 <div class="item">
-                    <router-link to="/woman" >WOMAN</router-link>
+                    <router-link to="/woman">WOMAN</router-link>
                 </div>
                 <div class="item">
                     <router-link to="/aboutUs">ABOUT US</router-link>
@@ -44,12 +44,12 @@
             <div id="log_in">
                 <div class="user">
                     <router-link to="/login">
-                        <img src="../../public/assets/account.png" alt="" >
+                        <img src="../../public/assets/account.png" alt="">
 
                     </router-link>
                 </div>
                 <div class="cart">
-                        <img src="../../public/assets/cart.png" alt="" height="30px">
+                    <img src="../../public/assets/cart.png" alt="" height="30px">
                 </div>
             </div>
         </div>
@@ -61,12 +61,13 @@
 </script>
 
 <style  scoped>
-.cart img{
+.cart img {
     height: 30px;
 }
- .with-8{
-    width: 8%;
- }
+
+.with-8 {
+    /* width: 8%; */
+}
 
 
 * {
@@ -78,12 +79,12 @@
 
 #wrapper {
     width: 100%;
-    height: 80px;
+
 }
 
 #header {
     width: 100%;
-    padding: 0 20px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,13 +110,13 @@
 
 #menu .item a {
     text-decoration: none;
-    padding: 14px 25px;
+    /* padding: 14px 25px; */
     display: block;
     color: #fff;
 }
 
 #menu .item_menu {
-    padding: 0 15px;
+    /* padding: 0 15px; */
     position: relative;
     top: 0;
 }
@@ -124,7 +125,7 @@
     visibility: hidden;
     position: absolute;
     background-color: #292929;
-    width: 100%;
+    /* width: 100%; */
     opacity: 0;
     transition: 0.25s;
 }
@@ -164,7 +165,7 @@ body {
     text-decoration: none;
     display: block;
     color: #fff;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
 }
 
 #search {
@@ -185,13 +186,13 @@ body {
 #search_btn {
     background-color: #fff;
     border: none;
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
     cursor: pointer;
     border-radius: 50%;
     font-size: 15px;
 }
 
-#search_btn img{
+#search_btn img {
     height: 25px;
 }
 
@@ -209,9 +210,10 @@ body {
 }
 
 .user {
-    padding-right: 12px;
+    /* padding-right: 12px; */
 }
-.user img{
+
+.user img {
     height: 30px;
 }
 

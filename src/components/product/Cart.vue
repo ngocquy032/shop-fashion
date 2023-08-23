@@ -1,35 +1,34 @@
 <template>
     <div id="card">
-        <div class="card_style_1" style="width: 24%;" v-for="product in products " :key="product.id">
-            <div class="size-img">
-                <img :src="`${product.image}`" class="card-img-top" :alt="product.image"  />
-
+        <div class="size-img">
+            <img :src="`${image}`" :alt="image" />
+        </div>
+        <div class="card-body">
+            <p class="card-text">{{ title }}</p>
+            <div class="star">
+                <span class="fa fa-star checked"></span>
             </div>
-            <div class="card-body">
-                <p class="card-text">{{ product.title }}</p>
-                <div class="star">
-                    <span class="fa fa-star checked">{{ product.rating.rate }}</span>
-                   
-                </div>
-                <div class="product-price"><bdi>{{ product.price }}&nbsp;<span
-                            class="woocommerce-Price-currencySymbol">₫</span></bdi>
-                </div>
+            <div class="product-price"><bdi>{{ price }}&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></bdi>
             </div>
         </div>
     </div>
 </template>
-
 <script setup >
 import { defineProps } from 'vue';
-const props = defineProps(['products']);
+const { image, title, price } = defineProps([
+    'image',
+    'title',
+    'price',
+]);
+
 </script>
 
-<style scoped>
-
-.size-img img{
-    height: 250px;
-    width: 300px;
+<style >
+.size-img img {
+    height: 310px;
+    object-fit: contain;
 }
+
 .no-underline {
     text-decoration: none;
 }
@@ -55,63 +54,19 @@ const props = defineProps(['products']);
     background-color: #F29727;
 }
 
-.mg-5 a {
 
-    margin: 0px 5px;
-}
-
-
-
-.mg-5 img {
-    height: 20px;
-}
-
-.w-50 {
-    width: 50%;
-}
-
-.text-banner {
-    color: #616161;
-    text-align: center;
-    justify-content: center;
-    flex-flow: column;
-    display: flex;
-    height: 513px;
-    background-color: #ece2d8;
-}
-
-#box_title {
-    margin-right: 6%;
-    margin-left: 6%;
-    line-height: 30px;
-    margin-top: 20px;
-    border-bottom: 3px solid #ff720b;
-    margin-bottom: 20px;
-}
-
-#box_title label {
-    text-align: left;
-    font-size: 16px;
-    color: #FFF !important;
-    height: 32px;
-    line-height: 34px;
-    text-transform: uppercase;
-    padding-left: 15px;
-    padding-right: 15px;
-    background: #ff720b;
-    white-space: nowrap;
-}
 
 .card-body {
     padding-bottom: 10px;
-    text-align: center;
+
 }
 
-#card>:hover {
+#card:hover {
     border: 1px solid #ff720b;
+    border-radius: 5px;
 }
 
-#card {
+/* #card {
     color: black;
     font-weight: 600;
     display: flex;
@@ -119,14 +74,14 @@ const props = defineProps(['products']);
     margin-left: 80px;
     margin-right: 80px;
     padding-bottom: 20px;
-}
+} */
 
 #card button {
     border: 1px solid wheat;
 }
 
 .card-text {
-    font-size: 16px;
+    font-size: 15px;
     padding-top: 10px;
 }
 
@@ -148,10 +103,5 @@ const props = defineProps(['products']);
 
 .product-price {
     padding-bottom: 10px;
-}
-
-.d-flex {
-    margin-left: 10%;
-    margin-right: 10%;
 }
 </style>
