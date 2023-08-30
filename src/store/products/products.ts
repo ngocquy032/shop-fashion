@@ -1,19 +1,32 @@
-import { ref } from "vue"; 
 
-const products = ref([]);
+import axios from "axios";
+import { ref } from "vue";
+const apiUrl = 'https://fakestoreapi.com/products';
 
+interface Product {
+    title: string;
+    price: number;
+    image: any;
+    category: string
+}
+const products = ref<Product[]>([]);
 
-const api = async () => {
-    await fetch("https://fakestoreapi.com/products")
-        .then((res) => res.json())
-        .then((json) => {
-            products.value = json;
-            products.value.splice(12, 2);
-            products.value.splice(16, 2);
-        })
-};
-api();
+axios.get(apiUrl)
+  
+    .then(function (response) {
 
+        products.value = response.data;
+        products.value.splice(12, 2);
+        products.value.splice(16, 2);
+
+        console.log('dataAxios', products.value);
+
+    })
+    .catch(function (error) {
+        console.log('loi', error);
+    });
 
 export { products };
+
+
 

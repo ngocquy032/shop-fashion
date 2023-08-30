@@ -1,7 +1,7 @@
 <template>
     <div id="card">
         <div class="size-img">
-            <img :src="`${image}`" :alt="image" />
+            <img :src="`${image}`"  />
         </div>
         <div class="card-body">
             <p class="card-text">{{ title }}</p>
@@ -13,13 +13,16 @@
         </div>
     </div>
 </template>
-<script setup >
-import { defineProps } from 'vue';
-const { image, title, price } = defineProps([
-    'image',
-    'title',
-    'price',
-]);
+<script setup lang="ts" >
+
+interface Props {
+    title: String,
+    price: Number,
+    image: any,
+ 
+}
+const props = defineProps<Props>();
+const { title, price, image } = props;
 
 </script>
 

@@ -1,48 +1,48 @@
 <template>
   <Banner />
-
   <div class="item-product-vc">
-
     <div v-for="(brandProducts, type) in products" :key="type">
       <div style="display: block;" v-if="type === 0 || brandProducts.category !== products[type - 1].category">
         <div id="box_title">
           <label>{{ brandProducts.category }}</label>
         </div>
-
       </div>
-
       <div class="cart-item">
-  
         <Cart :title="brandProducts.title" :price="brandProducts.price" :image="brandProducts.image" />
       </div>
     </div>
-
-
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue';  
+<script setup lang="ts" >
+import { ref, onMounted } from 'vue';
 import Banner from "@/components/BannerComponent.vue";
 import Cart from "@/components/product/Cart.vue";
-import { products } from '../store/products/products';
 
-const productsData = ref(products);
+import { products as productsData } from '../store/products/products';
+interface ProductHome {
+  title: string;
+  price: number;
+  image: any;
+  category: string
+}
 
-setTimeout(() => {
-  Cart
-  console.log("456", productsData.value);
-}, 5000);
+let products = ref<ProductHome[]>([]);
+onMounted(() => {
 
-console.log("123", productsData.value);
+  setTimeout(() => {
+    products.value = productsData.value;
+    console.log("DataHome", products.value);
+  }, 2000);
+
+})
+
+
 
 </script>
 
-
 <style >
-
-
-
+@import "@/Responsive/home.css";
 
 #box_title {
   margin-right: 6%;
