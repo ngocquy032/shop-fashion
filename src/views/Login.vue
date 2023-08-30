@@ -35,11 +35,11 @@
   </div>
 </template>
 
-<script setup >
+<script setup lang="ts" >
 import { ref } from 'vue';
 const passMesseger = ref('');
 const emailMesseger = ref('');
-import { email, password, CheckEmail, CheckPass} from '@/service/Auth.ts'
+import { email, password, CheckEmail, CheckPass} from '@/service/Auth'
 
 
 

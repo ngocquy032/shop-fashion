@@ -3,12 +3,15 @@ import MainLayoutVue from '@/layouts/MainLayout.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'home',
     component: MainLayoutVue,
     children: [
       {
         path: '/login',
         component: () => import('@/views/Login.vue')
+      },
+      {
+        path: '/',
+        component: ()=> import('@/views/Home.vue')
       },
       {
         path: '/sigUp',
